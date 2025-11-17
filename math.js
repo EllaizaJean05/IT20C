@@ -6,6 +6,12 @@ function diff(num1, num2){
     diff = num1 - num2;
     console.log(diff);
 }
+function prod(num1, num2){
+    prod = num1 + num2;
+    console.log(prod);
+}
 sum(2,3);
 diff(5,3);
+prod(11, 5);
+
 
