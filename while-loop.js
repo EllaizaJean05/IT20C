@@ -22,12 +22,21 @@
 
 // }
 
-arr=[1,2,3];
-output + " ";
-index =0;
+// arr=[1,2,3];
+// output + " ";
+// index =0;
 
-while (index <= arr.length -1){
-    output += arr[index] + " ";
-    index++;
+// while (index <= arr.length -1){
+//     output += arr[index] + " ";
+//     index++;
+// }
+// console.log(output);
+
+console.log ("Reverse");
+1=5;
+
+while (i >=1){
+    console.log (i);
+    i--;
+    
 }
-console.log(output);
