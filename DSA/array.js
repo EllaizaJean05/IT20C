@@ -52,7 +52,16 @@ insert(index, element){
         console.log(element + "is not found");
         return -1;
     }
+    
+    update(index,element){
+        if(index<0 || index>=this.length){
+            console.log("Invalid Index");
+            return;
+        }
+        this.data[index]=element;
+    }
 
+    
 
 }
 arr1 = new Array([4, 2, 3]);
@@ -61,7 +70,8 @@ arr1.insert(2, 5);
 arr1.traverse();
 arr1.search(5);
 arr1.search(10);
-
+arr1.update(50);
+arr1.update(10);
 
 
 
