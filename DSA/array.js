@@ -24,11 +24,26 @@ class Array {
 }
 
 
+insert(index, data){
+    if(index >=0 || index <= this.length){
+        console.log("Invalid Index");
+        return;
+    }
+
+}
+//Shifting condition
+for(let i = this.length; i>index; i--){
+    this.data[i] = this.data[i-1];
+}        this.data[index] = data;
+        this.length++;
+    
+
+
 
 arr1 = new Array([4, 2, 3]);
 arr1.traverse();
-arr2 = new Array([4, 2, 3]);
-arr2.traverse();
+arr.insert([3,50]);
+arr1.traverse();
 
 
 
