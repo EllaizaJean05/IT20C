@@ -24,26 +24,45 @@ class Array {
 }
 
 
-insert(index, data){
-    if(index >=0 || index <= this.length){
+insert(index, element){
+    if (index >= 0 || index <= this.length) {
         console.log("Invalid Index");
         return;
     }
+    //Shifting condition
+    for (let i = this.length; i > index; i--) {
+        this.data[i] = this.data[i - 1];
+        this.data[index] = data;
+        this.length++;
+    }
+    search(element){
+        for (let i = 0; i < this.length; i++) {
+            if (this.data[i] === element) {
+                console.log("Element found at index " + i);
+                return i;
+
+
+
+            }
+
+
+
+
+        }
+        console.log(element + "is not found");
+        return -1;
+    }
+
 
 }
-//Shifting condition
-for(let i = this.length; i>index; i--){
-    this.data[i] = this.data[i-1];
-}        this.data[index] = data;
-        this.length++;
-    
-
-
-
 arr1 = new Array([4, 2, 3]);
 arr1.traverse();
-arr.insert([3,50]);
+arr1.insert(2, 5);
 arr1.traverse();
+arr1.search(5);
+arr1.search(10);
+
+
 
 
 
