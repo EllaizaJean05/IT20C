@@ -43,7 +43,7 @@ stack1.push(6);
 stack1.traverse()
 // console.log("is the stack rempty? " + stack1.is_empty());
 console.log("Top element is: " + stack1.peek());
-console.log("Top element is: " + stack1.pop() + "is popped, the new element is :" + stack1.peek());
+console.log("Top element is: " + stack1.pop() + " is popped, the new element is :" + stack1.peek());
 console.log("Size of stack is: " + stack1.size());
 stack1.traverse();
 
